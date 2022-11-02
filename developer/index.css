@@ -1,0 +1,304 @@
+body {
+	margin: 0;
+	color: white;
+}
+
+/*SHELL*/
+@media screen {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        font-family: Arial;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body[data-theme="system"] {
+        }
+    }
+
+    body > header, body > footer {
+        display: flex;
+        display: webkit-flex;
+    }
+
+    body > header > section, body > footer > section {
+        width: 100%;
+    }
+
+    blocks {
+        width: 100%;
+    }
+
+    blocks, block, box, card {
+        display: flex;
+        display: webkit-flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    block > section, card > section, box > section {
+        width: 100%;
+    }
+
+    block > picture {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    box > * > picture {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    flex, column, row {
+        display: flex;
+        display: webkit-flex;
+    }
+
+    column {
+        flex-direction: column;
+    }
+
+    row {
+        flex-direction: row;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    form > * {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        display: webkit-flex;
+        width: 100%;
+        overflow: visible;
+        position: relative;
+        min-height: 100%;
+        background: #bbb;
+        overflow-x: hidden;
+    }
+
+    ico {
+        align-items: center;
+        display: flex;
+        display: webkit-flex;
+        justify-content: center;
+    }
+
+    ico:not([data-height]) {
+        height: 50px;
+    }
+
+    ico:not([data-width]) {
+        width: 50px;
+    }
+
+    iframe {
+        border: 0;
+    }
+
+    input {
+        -webkit-appearance: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    [type="text"], [type="password"] {
+        background: none;
+        border: unset;
+        padding: 0;
+    }
+
+    input[type="file"], input[type="submit"] {
+        display: none;
+    }
+
+    menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    page, pages {
+        display: flex;
+        position: relative;
+    }
+
+    textarea {
+        -webkit-appearance: none;
+        border: unset;
+        resize: none;
+    }
+
+    textarea:focus {
+        outline: none;
+    }
+
+    body > page, body > pages {
+        z-index: 123456789;
+    }
+
+    [placeholder]:not(input):empty:before {
+        content: attr(placeholder);
+        opacity: 0.5;
+    }
+
+    [data-hide]:not([data-active="true"]), [data-page]:not([data-active="true"]):not(.-active), [data-pages]:not([data-active="true"]):not(.-active) {
+        display: none;
+    }
+}
+
+.background-color-000 {
+	background-color: #000;
+}
+
+[data-background-color="rgba(0,0,0,0.5)"] {
+	background-color: rgba(0,0,0,0.5);
+	background: black;
+}
+
+.border-radius-50px {
+	border-radius: 50px;
+}
+
+.bottom-0 {
+	bottom: 0;
+}
+
+.color-ff3b30 {
+	color: #ff3b30;
+}
+
+.color-32cd32 {
+	color: #32cd32;
+}
+
+.color-0096c7 {
+	color: #0096c7;
+}
+
+/*COLUMNS*/
+@media screen {
+    [data-columns] {
+        display: grid;
+    }
+	
+    [data-columns="1"] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.filter-invert-1 {
+	filter: invert(1);
+}
+
+.flex-grow-1 {
+	flex-grow: 1;
+}
+
+.font-size-18px {
+	font-size: 18px;
+}
+
+.font-weight-bolder {
+	font-weight: bolder;
+}
+
+/*GRID GAP*/
+@media screen {
+    .grid-gap-4px {
+        grid-gap: 4px;
+    }
+}
+
+.height-50px {
+	height: 50px;
+}
+
+.height-100pct {
+	height: 100%;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-space-around {
+	justify-content: space-around;
+}
+
+.line-height-30px {
+	line-height: 30px;
+}
+
+.line-height-50px {
+	line-height: 50px;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.margin-bottom-50px {
+	margin-bottom: 50px;
+}
+
+.margin-left-5px {
+	margin-left: 5px;
+}
+
+.margin-right-10px {
+	margin-right: 10px;
+}
+
+.margin-x-10px {
+	margin: 0 10px;
+}
+
+.margin-top-auto {
+	margin-top: auto;
+}
+
+.padding-10px {
+	padding: 10px;
+}
+
+.padding-x-10px {
+	padding: 0 10px;
+}
+
+.padding-x-20px {
+	padding: 0 20px;
+}
+
+.position-fixed {
+	position: fixed;
+}
+
+.right-0 {
+	right: 0;
+}
+
+.top-0 {
+	top: 0;
+}
+
+.width-100pct {
+	width: 100%;
+}
+
+.width-320px {
+	width: 320px;
+}

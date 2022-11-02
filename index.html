@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            window.onload = () => {
+                const hash = window.location.hash.split('#')[1];
+                const iframe = document.getElementById('iframe');
+                iframe.src = hash;
+                function reload(){setTimeout(function(){iframe.src+="",reload()},60000)}
+                //reload();
+            }
+        </script>
+        <style>
+            body {
+                margin: 0;
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe id="iframe"></iframe>
+    </body>
+</html>
