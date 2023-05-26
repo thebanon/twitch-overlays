@@ -189,6 +189,11 @@ body {
 	color: #0096c7;
 }
 
+/*DISPLAY*/
+.display-none {
+	display: none;
+}
+
 /*COLUMNS*/
 @media screen {
     [data-columns] {
